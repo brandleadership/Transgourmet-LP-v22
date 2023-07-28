@@ -59,10 +59,10 @@ const landingpageBuildConfig = new BuildConfig()
 module.exports = WebpackConfigBuilder.fromConfigs(
   landingpageBuildConfig
     .clone()
-    .withName("Baloise-LP-de-cx-22.0")
-    .withPropertiesFilePath("properties.js"),
-  landingpageBuildConfig
-    .clone()
-    .withName("Baloise-LP-en-cx-22.0")
+    .withName("Transgourmet-LP-de-cx-22.0")
     .withPropertiesFilePath("properties.js")
+  // landingpageBuildConfig
+  //   .clone()
+  //   .withName("Transgourmet-LP-en-cx-22.0")
+  //   .withPropertiesFilePath("properties.js")
 );

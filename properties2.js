@@ -4,11 +4,11 @@ module.exports = {
   template: "whitelabel",
   preview: false,
   styles: {
-    "primary-color": css.color("#00138a"),
+    "primary-color": css.color("#1890FF"),
     "primary-color-70": css.color("#1FB0E6"),
     "primary-color-50": css.color("#71C2ED"),
     "primary-color-20": css.color("#C7E4F6"),
-    "secondary-color": "#b0aa7e",
+    "secondary-color": "#C4D600",
     "grey-100": css.color("#57585A"),
     "grey-70": css.color("#6C6D70"),
     "grey-50": css.color("#939598"),
