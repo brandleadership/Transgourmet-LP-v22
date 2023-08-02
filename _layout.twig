@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Basler Versicherungen Landingpage
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ bsi_cx_css_href() }}" />
+  </head>
+  <body class="no-js">
+    <div class="main">
+      <!-- header | baloise ch | image -->
+      <header class="header"
+        data-bsi-dropzone="header"
+        data-bsi-dropzone-allowed-elements="header top-header-co-branding-blue">
+        {% block header %}
+
+        {% endblock %}
+      </header>
+
+      <div class="is-body">
+        <div class="u-grid">
+          <div class="u-grid-row">
+            <div class="u-grid-col is-col-s-12 is-col-m-offset-6 is-col-m-6 is-col-l-offset-6 is-col-l-6 is-col-xl-offset-6 is-col-xl-6">
+              <div class="b-header-interferer is-links is-no-widget">
+                <div class="header-interferer__link-wrapper"
+                  data-bsi-dropzone="button-area"
+                  data-bsi-dropzone-allowed-elements="cta-primary cta-new cta-secondary cta-tertiary cta"
+                  data-bsi-dropzone-max-number-of-elements="1">
+                  {% block buttonArea %}
+
+                  {% endblock %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <main class="is-body">
+        <section class="c-content--default">
+          <div data-bsi-dropzone="content"
+            data-bsi-dropzone-allowed-elements="video-player-element spacer accordion accordion-item single-column-elements-centered single-column-elements-centered-slim content-full-width image-teaser-group image-teaser-group-test group-three-media text-bild-right text-bild-left title-h2-large title-h3-large title-h4-large title-h5-large title-h2 title-h3 title-h4 title-h5 text single-column-form two-column-form widget-html">
+            {% block content %}
+
+            {% endblock %}
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__metalist"
+          data-bsi-dropzone="footer"
+          data-bsi-dropzone-allowed-elements="footer footer-unternehmenskunden"
+          data-bsi-dropzone-max-number-of-elements="1">
+          {% block footer %}
+
+          {% endblock %}
+        </div>
+      </footer>
+    </div>
+    <script src="{{ bsi_cx_js_module_runtime_href() }}" defer="defer"></script>
+    <script data-bsi-remove-if="draft"
+      src="{{ bsi_cx_js_module_href('main') }}"
+      defer="defer"></script>
+    {{ bsi_cx_js_module_missing_chunks_import() }}
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<div class="content-element form webcam-image-upload single-column-form undecided" data-bsi-element="webcam-image-upload">
+	<div class="row">
+		<div class="flex-slim centered">
+			<div class="element">
+				<form class="form form-wrapper" data-bsi-element-part="form" id="form">
+					<div class="row">
+						<ul class="form-validation" data-bsi-form-validation="">
+							<li class="form-validation-item" data-bsi-form-validation-item=""></li>
+						</ul>
+						<div class="form-content">
+							<div class="content-element image-wrapper">
+								<div class="row">
+									<div class="flex">
+										<div class="element">
+											<div class="image">
+												<div class="introduction">
+													<h3 data-bsi-element-part="plain-text">Achtung</h3>
+													<p data-bsi-element-part="plain-text">Dieses Element benötigt den Zugriff auf Ihre Webcam.</p>
+												</div>
+												<div class="errormessage">
+													<h3 data-bsi-element-part="plain-text">Schade</h3>
+													<p data-bsi-element-part="plain-text">Leider hat dieses Element keinen Zugriff auf Ihre Webcam. Aber Sie können trotzdem ein Bild hochladen.</p>
+												</div>
+												<video autoplay="" playsinline="" muted=""></video>
+												<canvas></canvas>
+												<img class="preview"/>
+												<div class="file" data-bsi-element-part="form-field" role="presentation" aria-hidden="true">
+													<label for="bild">Bild</label>
+													<input type="file" name="bild" id="bild" required="required"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hidden" data-bsi-element-part="form-field" role="presentation" aria-hidden="true">
+							<label for="image-width">Maximale Breite des Bildes</label>
+							<input class="image-max-width" type="number" min="" max="" step="" value="1024" id="image-width" name="bildbreite"/>
+						</div>
+						<div class="hidden" data-bsi-element-part="form-select" role="presentation" aria-hidden="true" data-bsi-value="Selfie" data-bsi-value-list="Selfie
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															Umgebung">
+							<label for="kamera">Bild</label>
+							<select class="selected-camera" name="kamera" id="kamera">
+								<option value="Selfie">Selfie</option>
+								<option value="Umgebung">Umgebung</option>
+							</select>
+						</div>
+						<div class="form-button-bar clearfix" style="display:none">
+							<div class="form-button-container button capture clearfix">
+								<a href="javascript:void(0);" class="form-button" data-bsi-element-part="plain-text">Fotografieren</a>
+							</div>
+						</div>
+						<div class="form-button-bar clearfix" style="display:none">
+							<div class="form-button-container button alternate retry">
+								<a href="javascript:void(0);" class="form-button" data-bsi-element-part="plain-text">Wiederholen</a>
+							</div>
+							<div class="form-button-container button submit">
+								<a href="javascript:void(0);" class="form-button" data-bsi-element-part="plain-text">Hochladen</a>
+							</div>
+						</div>
+						<div class="form-button-bar submit-reset-bar">
+							<div class="form-button-container">
+								<input type="submit" class="form-button" value="Bild hochladen"/>
+							</div>
+							<div class="form-button-container">
+								<input type="reset" class="form-button" value="Zurücksetzen"/>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

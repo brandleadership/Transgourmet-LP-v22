@@ -1,0 +1,31 @@
+const { css } = require("@bsi-cx/design-build");
+
+module.exports = {
+  template: "whitelabel",
+  preview: false,
+  styles: {
+    "primary-color": css.color("#1890FF"),
+    "primary-color-70": css.color("#1FB0E6"),
+    "primary-color-50": css.color("#71C2ED"),
+    "primary-color-20": css.color("#C7E4F6"),
+    "secondary-color": "#C4D600",
+    "grey-100": css.color("#57585A"),
+    "grey-70": css.color("#6C6D70"),
+    "grey-50": css.color("#939598"),
+    "grey-20": css.color("#D1D2D4"),
+    black: css.color("#000000"),
+    white: css.color("#ffffff"),
+    "background-color": css.color("#eeeeee"),
+    "container-bg-color": css.color("#ffffff"),
+    "content-width": "560",
+    "text-color": css.color("#333333"),
+    "button-text-color": css.color("#ffffff"),
+    "button-border-radius": "5px",
+    "divider-color": css.color("#cccccc"),
+    "image-full-width": "600",
+    "image-half-width": "300",
+    "image-border-radius": "8px",
+    "card-border-radius": "8px",
+    "card-border-radius-bottom": "0px 0px 8px 8px",
+  },
+};
