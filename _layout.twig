@@ -1,15 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"   xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
   <head>
     <title>
-      Basler Versicherungen Landingpage
+      Transgourmet Landingpage
     </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta name="robots" content="noindex,nofollow" />
-    <meta name="google" content="notranslate" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="robots" content="noindex" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta http-equiv="Content-Security-Policy" content=" media-src 'self' data: blob: *;">
     <link rel="stylesheet" href="{{ bsi_cx_css_href() }}" />
+     <link  rel="icon" href="/favicon.ico" type="image/x-icon"
+            href="{{ bsi_cx_asset(
+                '../resources/img/favicon-TG.ico'
+            )
+            }}" />
+          <link rel="apple-touch-icon"
+            sizes="57x57"
+              type="image/png"
+            href="{{
+            bsi_cx_asset(
+                '../resources/img/favicon-TG.png'
+            )
+            }}" />
+        <link rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="{{
+            bsi_cx_asset(
+                '../resources/img/favicon-TG.png'
+            )
+            }}" />
+         <link rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="{{
+            bsi_cx_asset(
+               '../resources/img/favicon-TG.png'
+            )
+            }}" />
+             <link rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="{{
+            bsi_cx_asset(
+               '../resources/img/favicon-TG.png'
+            )
+            }}" />
+               <link rel="icon"
+            type="image/png"
+            sizes="512x512"
+            href="{{
+            bsi_cx_asset(
+               '../resources/img/favicon-TG.png'
+            )
+            }}" /> 
   </head>
   <body class="no-js">
     <div class="main">
@@ -64,10 +110,8 @@
         </div>
       </footer>
     </div>
-    <script src="{{ bsi_cx_js_module_runtime_href() }}" defer="defer"></script>
-    <script data-bsi-remove-if="draft"
-      src="{{ bsi_cx_js_module_href('main') }}"
-      defer="defer"></script>
-    {{ bsi_cx_js_module_missing_chunks_import() }}
+     <script src="{{ bsi_cx_js_module_runtime_href() }}" data-bsi-remove-if="draft" defer="defer"></script> 
+    <script src="{{ bsi_cx_js_module_href('main') }}" data-bsi-remove-if="draft" defer="defer"></script> 
+    {{ bsi_cx_js_module_missing_chunks_import() }} 
   </body>
 </html>
