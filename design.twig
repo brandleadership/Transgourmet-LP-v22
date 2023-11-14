@@ -53,6 +53,48 @@
                './resources/img/favicon-TG.png'
             )
             }} /> 
+			 <script>
+
+const url = window.location.href;
+const lang = document.documentElement.lang
+const title = document.documentElement.title
+
+let modifiedURL = "";
+
+for (let i = 0; i < url.length; i++) {
+  if (url[i] === "/") {
+    modifiedURL += "/\\";
+  } else {
+    modifiedURL += url[i];
+  }
+}
+
+var utag_data = {
+ "platform":"tgch-transgourmet",
+ "event_attributes_eventName":"registration",
+ "page_attributes_URL": modifiedURL,
+ "page_pageInfo_language": lang,
+ "page_pageInfo_pageName": title,
+ "page_category_01":"bsi",
+ "page_category_02":"",
+ "page_category_03":"",
+ "page_category_04":"",
+ "user_profile_profileInfo_profileID":"",
+ "user_profile_profileInfo_loginStatus":"",
+ "user_profile_profileInfo_language":""
+};
+console.log(utag_data)
+</script>
+
+<script>
+	(function(a,b,c,d){
+	a='//tags.tiqcdn.com/utag/coop-ch/tgch-transgourmet/prod/utag.js';
+	b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+	a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+	})();
+</script>
+
+<!-- Tealium utag Script End -->
 	</head>
 	<body class="base-text-color no-js">
 		<div class="main">
