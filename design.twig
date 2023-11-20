@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <meta http-equiv="Content-Security-Policy" content=" media-src 'self' data: blob: *;">
     <link rel="stylesheet" href="{{ bsi_cx_css_href() }}" />
+	<link rel="stylesheet" href="https://libs.coop.ch/swc/themes/coop.css">
+ <script type="module" src="https://libs.coop.ch/swc/prod/swc.esm.js"></script>
+ <script nomodule src="https://libs.coop.ch/swc/prod/swc.js"></script>
+
      <link  rel="icon" href="/favicon.ico" type="image/x-icon"
             href={{ bsi_cx_asset(
                 './resources/img/favicon-TG.ico'
@@ -117,7 +121,9 @@ console.log(utag_data)
 			</header>
 			<div data-bsi-dropzone="farbleiste" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="farbleiste-fixe-breite farbleiste-ganze-breite"></div>
 			<section class="wrapper main clearfix">
-				<div data-bsi-dropzone="content" data-bsi-dropzone-allowed-elements="farbleiste-fixe-breite content-column-slim video video-thumbnail widget-html ueberschrift-h1 ueberschrift-h2 ueberschrift-h3 text text-rich trenner hervorgehobener-inhalt-primary hervorgehobener-inhalt-secondary tabelle ugm-ranking image image-no-legend image-title-cta image-swipe-links webcam-image-upload qr-code button button-fullwidth spalten-2 spalten-3 spalten-4 single-column-form-slim single-column-form-wide two-column-form two-column-form-complex news-snippets abstand google-maps pie-chart pie-chart-without-table"></div>
+				<div data-bsi-dropzone="content" data-bsi-dropzone-allowed-elements="cookie-banner farbleiste-fixe-breite content-column-slim video video-thumbnail widget-html ueberschrift-h1 ueberschrift-h2 ueberschrift-h3 text text-rich trenner hervorgehobener-inhalt-primary hervorgehobener-inhalt-secondary tabelle ugm-ranking image image-no-legend image-title-cta image-swipe-links webcam-image-upload qr-code button button-fullwidth spalten-2 spalten-3 spalten-4 single-column-form-slim single-column-form-wide two-column-form two-column-form-complex news-snippets abstand google-maps pie-chart pie-chart-without-table">
+					{# {% include 'content-elements/special/cookie-banner/template.twig' %} #}
+				</div>
 			</section>
 			<footer class="footer">
 				<div class="footer-bottom">

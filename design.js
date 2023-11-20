@@ -109,6 +109,7 @@ module.exports = cx.design
         require("./content-elements/special/video"),
         require("./content-elements/special/video-thumbnail"),
         require("./content-elements/special/webcam-image-upload"),
-        require("./content-elements/special/widget-html")
+        require("./content-elements/special/widget-html"),
+        require("./content-elements/special/cookie-banner")
       )
   );

@@ -25,9 +25,17 @@ module.exports = WebpackConfigBuilder.fromConfigs(
   landingpageBuildConfig
     .clone()
     .withName("Transgourmet-LP-de-cx-22.0")
-    .withPropertiesFilePath("properties.js"),
+    .withPropertiesFilePath("properties-de.js"),
   landingpageBuildConfig
     .clone()
     .withName("Transgourmet-LP-en-cx-22.0")
-    .withPropertiesFilePath("properties.js")
+    .withPropertiesFilePath("properties-en.js"),
+  landingpageBuildConfig
+    .clone()
+    .withName("Transgourmet-LP-fr-cx-22.0")
+    .withPropertiesFilePath("properties-fr.js"),
+  landingpageBuildConfig
+    .clone()
+    .withName("Transgourmet-LP-it-cx-22.0")
+    .withPropertiesFilePath("properties-it.js")
 );
