@@ -58,6 +58,21 @@
             )
             }} /> 
 			 <script>
+			 document.addEventListener("DOMContentLoaded", function() {
+const categoryOne = document.querySelector(".page-category-01");
+const categoryOneContent = categoryOne.innerHTML;
+const categoryTwo = document.querySelector(".page-category-02");
+const categoryTwoContent = categoryTwo.innerHTML;
+const categoryThree = document.querySelector(".page-category-03");
+const categoryThreeContent = categoryThree.innerHTML;
+const categoryFour = document.querySelector(".page-category-04");
+const categoryFourContent = categoryFour.innerHTML;
+const registration = document.querySelector(".registration");
+const registrationContent = registration.innerHTML;
+const loginStatus = document.querySelector(".login-status");
+const loginStatusContent = loginStatus.innerHTML;
+const hashID = document.querySelector(".hash-id");
+const hashIDContent = hashID.innerHTML;
 
 const url = window.location.href;
 const lang = document.documentElement.lang
@@ -75,19 +90,20 @@ for (let i = 0; i < url.length; i++) {
 
 var utag_data = {
  "platform":"tgch-transgourmet",
- "event_attributes_eventName":"registration",
+ "event_attributes_eventName": registrationContent,
  "page_attributes_URL": modifiedURL,
  "page_pageInfo_language": lang,
  "page_pageInfo_pageName": title,
- "page_category_01":"bsi",
- "page_category_02":"",
- "page_category_03":"",
- "page_category_04":"",
- "user_profile_profileInfo_profileID":"",
- "user_profile_profileInfo_loginStatus":"",
+ "page_category_01": categoryOneContent,
+ "page_category_02": categoryTwoContent,
+ "page_category_03": categoryThreeContent,
+ "page_category_04": categoryFourContent,
+ "user_profile_profileInfo_profileID": loginStatusContent,
+ "user_profile_profileInfo_loginStatus": hashIDContent,
  "user_profile_profileInfo_language":""
 };
 console.log(utag_data)
+});
 </script>
 
 <script>
@@ -121,8 +137,8 @@ console.log(utag_data)
 			</header>
 			<div data-bsi-dropzone="farbleiste" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="farbleiste-fixe-breite farbleiste-ganze-breite"></div>
 			<section class="wrapper main clearfix">
-				<div data-bsi-dropzone="content" data-bsi-dropzone-allowed-elements="cookie-banner farbleiste-fixe-breite content-column-slim video video-thumbnail widget-html ueberschrift-h1 ueberschrift-h2 ueberschrift-h3 text text-rich trenner hervorgehobener-inhalt-primary hervorgehobener-inhalt-secondary tabelle ugm-ranking image image-no-legend image-title-cta image-swipe-links webcam-image-upload qr-code button button-fullwidth spalten-2 spalten-3 spalten-4 single-column-form-slim single-column-form-wide two-column-form two-column-form-complex news-snippets abstand google-maps pie-chart pie-chart-without-table">
-					{# {% include 'content-elements/special/cookie-banner/template.twig' %} #}
+				<div data-bsi-dropzone="content" data-bsi-dropzone-allowed-elements="hash-id login-status page-category-01 page-category-02 page-category-03 page-category-04 registration cookie-banner farbleiste-fixe-breite content-column-slim video video-thumbnail widget-html ueberschrift-h1 ueberschrift-h2 ueberschrift-h3 text text-rich trenner hervorgehobener-inhalt-primary hervorgehobener-inhalt-secondary tabelle ugm-ranking image image-no-legend image-title-cta image-swipe-links webcam-image-upload qr-code button button-fullwidth spalten-2 spalten-3 spalten-4 single-column-form-slim single-column-form-wide two-column-form two-column-form-complex news-snippets abstand google-maps pie-chart pie-chart-without-table">
+				
 				</div>
 			</section>
 			<footer class="footer">
