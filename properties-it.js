@@ -4,6 +4,6 @@ module.exports = {
   ...baseProperties,
   cookie: {
     lang: "it",
-    href: "https://www.coop.ch/it/azienda/protezione-dei-dati.html?source=impo",
+    href: "https://www.transgourmet.ch/it/protezione-dei-dati",
   },
 };
