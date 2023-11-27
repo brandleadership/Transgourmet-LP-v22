@@ -20,6 +20,13 @@
 /* ============================================================= */
 /* Reset
 ============================ */
+
+.hide {
+  display: none;
+}
+.bsi-ce-edit-mode .show-if-edit {
+  display: block;
+}
 .clearfix::before,
 .clearfix::after {
   content: " ";

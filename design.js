@@ -109,6 +109,19 @@ module.exports = cx.design
         require("./content-elements/special/video"),
         require("./content-elements/special/video-thumbnail"),
         require("./content-elements/special/webcam-image-upload"),
-        require("./content-elements/special/widget-html")
+        require("./content-elements/special/widget-html"),
+        require("./content-elements/special/cookie-banner")
+      ),
+    cx.contentElementGroup
+      .withGroupId("script-elements")
+      .withLabel("Script Elements")
+      .withContentElements(
+        require("./content-elements/script-elements/page-category-01"),
+        require("./content-elements/script-elements/page-category-02"),
+        require("./content-elements/script-elements/page-category-03"),
+        require("./content-elements/script-elements/page-category-04"),
+        require("./content-elements/script-elements/registration"),
+        require("./content-elements/script-elements/user-profile-profileInfo-loginStatus"),
+        require("./content-elements/script-elements/user-profile-profileInfo-profileID")
       )
   );

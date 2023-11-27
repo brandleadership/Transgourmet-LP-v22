@@ -10,6 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <meta http-equiv="Content-Security-Policy" content=" media-src 'self' data: blob: *;">
+      <!-- Tealium utag Script Start -->
+    
+
     <link rel="stylesheet" href="{{ bsi_cx_css_href() }}" />
      <link  rel="icon" href="/favicon.ico" type="image/x-icon"
             href="{{ bsi_cx_asset(
@@ -58,6 +61,15 @@
             }}" /> 
   </head>
   <body class="no-js">
+ 
+     <!-- Google Tag Manager (noscript) -->
+        {# <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJFZV37"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"></iframe>
+        </noscript> #}
+        <!-- End Google Tag Manager (noscript) -->
     <div class="main">
       <!-- header | baloise ch | image -->
       <header class="header"
@@ -91,7 +103,7 @@
       <main class="is-body">
         <section class="c-content--default">
           <div data-bsi-dropzone="content"
-            data-bsi-dropzone-allowed-elements="video-player-element spacer accordion accordion-item single-column-elements-centered single-column-elements-centered-slim content-full-width image-teaser-group image-teaser-group-test group-three-media text-bild-right text-bild-left title-h2-large title-h3-large title-h4-large title-h5-large title-h2 title-h3 title-h4 title-h5 text single-column-form two-column-form widget-html">
+            data-bsi-dropzone-allowed-elements="cookie-banner video-player-element spacer accordion accordion-item single-column-elements-centered single-column-elements-centered-slim content-full-width image-teaser-group image-teaser-group-test group-three-media text-bild-right text-bild-left title-h2-large title-h3-large title-h4-large title-h5-large title-h2 title-h3 title-h4 title-h5 text single-column-form two-column-form widget-html">
             {% block content %}
 
             {% endblock %}
