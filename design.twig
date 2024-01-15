@@ -57,7 +57,54 @@
                './resources/img/favicon-TG.png'
             )
             }} /> 
-			 <script>
+
+
+<!-- Tealium utag Script End -->
+	</head>
+	<body class="base-text-color no-js">
+		<div class="main">
+			<header class="header">
+				<div class="header-top">
+					<div class="row">
+						<div class="flex" data-bsi-dropzone="header" data-bsi-dropzone-max-number-of-elements="3" data-bsi-dropzone-allowed-elements="logo navigation trenner">
+							<div class="element logo" data-bsi-element="logo">
+								<div class="logo-main-wrapper">
+									<img data-bsi-element-part="image" alt="" src="./img/logo.png"/>
+								</div>
+							</div>
+							{% include 'content-elements/landingpage-header/navigation/template.twig' %}
+							{% include 'content-elements/texts-images/trenner/template.twig' %}
+						</div>
+					</div>
+				</div>
+				<div data-bsi-dropzone="prescene" data-bsi-dropzone-allowed-elements="content-column-slim video video-thumbnail widget-html ueberschrift-h1 ueberschrift-h2 ueberschrift-h3 text text-rich trenner hervorgehobener-inhalt-primary hervorgehobener-inhalt-secondary tabelle ugm-ranking image image-no-legend image-title-cta image-swipe-links qr-code button button-fullwidth spalten-2 spalten-3 spalten-4 news-snippets abstand google-maps"></div>
+				<div class="header-image" data-bsi-dropzone="scene" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="bild-ganze-breite-responsive bild-fixe-breite-responsive"></div>
+			</header>
+			<div data-bsi-dropzone="farbleiste" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="farbleiste-fixe-breite farbleiste-ganze-breite"></div>
+			<section class="wrapper main clearfix">
+				<div data-bsi-dropzone="content" data-bsi-dropzone-allowed-elements="hash-id login-status page-category-01 page-category-02 page-category-03 page-category-04 registration cookie-banner farbleiste-fixe-breite content-column-slim video video-thumbnail widget-html ueberschrift-h1 ueberschrift-h2 ueberschrift-h3 text text-rich trenner hervorgehobener-inhalt-primary hervorgehobener-inhalt-secondary tabelle ugm-ranking image image-no-legend image-title-cta image-swipe-links webcam-image-upload qr-code button button-fullwidth spalten-2 spalten-3 spalten-4 single-column-form-slim single-column-form-wide two-column-form two-column-form-complex news-snippets abstand google-maps pie-chart pie-chart-without-table">
+				
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="footer-bottom">
+					<div class="row">
+						<div class="flex legal">
+							<div data-bsi-dropzone="footer-bottom-one" data-bsi-dropzone-allowed-elements="footer-spalten-1 footer-spalten-2 footer-spalten-3 footer-spalten-4 footer-company footer-social trenner" class="footer-container">
+								{% include 'content-elements/footer/footer-spalten-1/template.twig' %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	
+		</script>
+	   <script src="{{ bsi_cx_js_module_runtime_href() }}" data-bsi-remove-if="draft" defer="defer"></script> 
+    <script src="{{ bsi_cx_js_module_href('main') }}" data-bsi-remove-if="draft" defer="defer"></script> 
+    {{ bsi_cx_js_module_missing_chunks_import() }} 
+				 <script>
+		
 			 document.addEventListener("DOMContentLoaded", function() {
 const categoryOne = document.querySelector(".page-category-01");
 const categoryOneContent = categoryOne.innerHTML;
@@ -102,92 +149,20 @@ var utag_data = {
  "user_profile_profileInfo_loginStatus": hashIDContent,
  "user_profile_profileInfo_language":""
 };
-console.log(utag_data)
+utag.view({utag_data}); 
 });
+  
 </script>
 
 <script>
+window.utag_cfg_ovrd = window.utag_cfg_ovrd || {};
+window.utag_cfg_ovrd.noview = true;
+
 	(function(a,b,c,d){
-	a='//tags.tiqcdn.com/utag/coop-ch/tgch-transgourmet/prod/utag.js';
+	a='//tags.tiqcdn.com/utag/coop-ch/tgch-transgourmet/dev/utag.js';
 	b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
 	a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
 	})();
 </script>
-
-<!-- Tealium utag Script End -->
-	</head>
-	<body class="base-text-color no-js">
-		<div class="main">
-			<header class="header">
-				<div class="header-top">
-					<div class="row">
-						<div class="flex" data-bsi-dropzone="header" data-bsi-dropzone-max-number-of-elements="3" data-bsi-dropzone-allowed-elements="logo navigation trenner">
-							<div class="element logo" data-bsi-element="logo">
-								<div class="logo-main-wrapper">
-									<img data-bsi-element-part="image" alt="" src="./img/logo.png"/>
-								</div>
-							</div>
-							{% include 'content-elements/landingpage-header/navigation/template.twig' %}
-							{% include 'content-elements/texts-images/trenner/template.twig' %}
-						</div>
-					</div>
-				</div>
-				<div data-bsi-dropzone="prescene" data-bsi-dropzone-allowed-elements="content-column-slim video video-thumbnail widget-html ueberschrift-h1 ueberschrift-h2 ueberschrift-h3 text text-rich trenner hervorgehobener-inhalt-primary hervorgehobener-inhalt-secondary tabelle ugm-ranking image image-no-legend image-title-cta image-swipe-links qr-code button button-fullwidth spalten-2 spalten-3 spalten-4 news-snippets abstand google-maps"></div>
-				<div class="header-image" data-bsi-dropzone="scene" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="bild-ganze-breite-responsive bild-fixe-breite-responsive"></div>
-			</header>
-			<div data-bsi-dropzone="farbleiste" data-bsi-dropzone-max-number-of-elements="1" data-bsi-dropzone-allowed-elements="farbleiste-fixe-breite farbleiste-ganze-breite"></div>
-			<section class="wrapper main clearfix">
-				<div data-bsi-dropzone="content" data-bsi-dropzone-allowed-elements="hash-id login-status page-category-01 page-category-02 page-category-03 page-category-04 registration cookie-banner farbleiste-fixe-breite content-column-slim video video-thumbnail widget-html ueberschrift-h1 ueberschrift-h2 ueberschrift-h3 text text-rich trenner hervorgehobener-inhalt-primary hervorgehobener-inhalt-secondary tabelle ugm-ranking image image-no-legend image-title-cta image-swipe-links webcam-image-upload qr-code button button-fullwidth spalten-2 spalten-3 spalten-4 single-column-form-slim single-column-form-wide two-column-form two-column-form-complex news-snippets abstand google-maps pie-chart pie-chart-without-table">
-				
-				</div>
-			</section>
-			<footer class="footer">
-				<div class="footer-bottom">
-					<div class="row">
-						<div class="flex legal">
-							<div data-bsi-dropzone="footer-bottom-one" data-bsi-dropzone-allowed-elements="footer-spalten-1 footer-spalten-2 footer-spalten-3 footer-spalten-4 footer-company footer-social trenner" class="footer-container">
-								{% include 'content-elements/footer/footer-spalten-1/template.twig' %}
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-		{# <script>
-			window.pieChartColors = [
-			"#0082A1",
-			"#FE9915",
-			"#5D5D5D",
-			"#BB9F84",
-			"#21B296",
-			"#CFAE69"
-			];
-			window.datepicker = {
-			"supportDetectionDisabled": false,
-			"disableMobile": false,
-			"altInputHidden": false,
-			"plugins": []
-			};
-			window.cookieDisclaimer = {
-			"enabled": false,
-			"title": "Hinweis",
-			"text": "Diese Seite verwendet Cookies.",
-			"button": "Verstanden",
-			"cookie": {
-			"name": "cookieDisclaimerAccepted",
-			"path": "/"
-			}
-			}; #}
-		</script>
-		{# <script data-bsi-remove-if="draft" src="./js/bootstrap.min.js" type="text/javascript"></script> #}
-		{# <script data-bsi-remove-if="draft" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDCYmk7mskGHwghkA8_wRMQpbXLRGChXc&amp;callback=googleMapsApiReady"></script> #}
-		{# <script src="./js/scripts.js" type="text/javascript"></script> #}
-		{# <script data-bsi-remove-if="draft"> document.getElementById("copyright-year").innerHTML = new Date().getFullYear()</script> #}
-    {# <script data-bsi-remove-if="draft"
-      src="{{ bsi_cx_js_module_href('main') }}"
-      defer="defer"></script> #}
-	   <script src="{{ bsi_cx_js_module_runtime_href() }}" data-bsi-remove-if="draft" defer="defer"></script> 
-    <script src="{{ bsi_cx_js_module_href('main') }}" data-bsi-remove-if="draft" defer="defer"></script> 
-    {{ bsi_cx_js_module_missing_chunks_import() }} 
 	</body>
 </html>
