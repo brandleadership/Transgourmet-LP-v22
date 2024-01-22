@@ -103,6 +103,17 @@
 	   <script src="{{ bsi_cx_js_module_runtime_href() }}" data-bsi-remove-if="draft" defer="defer"></script> 
     <script src="{{ bsi_cx_js_module_href('main') }}" data-bsi-remove-if="draft" defer="defer"></script> 
     {{ bsi_cx_js_module_missing_chunks_import() }} 
+    
+    <script>
+window.utag_cfg_ovrd = window.utag_cfg_ovrd || {};
+window.utag_cfg_ovrd.noview = true;
+
+	(function(a,b,c,d){
+	a='//tags.tiqcdn.com/utag/coop-ch/tgch-transgourmet/qa/utag.js';
+	b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+	a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+	})();
+</script>
 				 <script>
 			 document.addEventListener("DOMContentLoaded", function() {
 const categoryOne = document.querySelector(".page-category-01");
@@ -144,24 +155,13 @@ var utag_data = {
  "page_category_02": categoryTwoContent,
  "page_category_03": categoryThreeContent,
  "page_category_04": categoryFourContent,
- "user_profile_profileInfo_profileID": loginStatusContent,
- "user_profile_profileInfo_loginStatus": hashIDContent,
+ "user_profile_profileInfo_profileID": hashIDContent,
+ "user_profile_profileInfo_loginStatus":loginStatusContent,
  "user_profile_profileInfo_language":""
 };
-utag.view({utag_data}); 
+utag.view(utag_data); 
 });
   
-</script>
-
-<script>
-window.utag_cfg_ovrd = window.utag_cfg_ovrd || {};
-window.utag_cfg_ovrd.noview = true;
-
-	(function(a,b,c,d){
-	a='//tags.tiqcdn.com/utag/coop-ch/tgch-transgourmet/qa/utag.js;
-	b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
-	a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
-	})();
 </script>
 	</body>
 </html>
