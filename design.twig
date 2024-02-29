@@ -109,7 +109,7 @@ window.utag_cfg_ovrd = window.utag_cfg_ovrd || {};
 window.utag_cfg_ovrd.noview = true;
 
 	(function(a,b,c,d){
-	a='//tags.tiqcdn.com/utag/coop-ch/tgch-transgourmet/qa/utag.js';
+	a='//tags.tiqcdn.com/utag/coop-ch/tgch-transgourmet/prod/utag.js';
 	b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
 	a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
 	})();
@@ -132,8 +132,8 @@ const hashID = document.querySelector(".hash-id");
 const hashIDContent = hashID.innerHTML;
 
 const url = window.location.href;
-const lang = document.documentElement.lang
-const title = document.documentElement.title
+const lang = document.documentElement.lang;
+const title = document.title;
 
 let modifiedURL = "";
 
@@ -159,7 +159,18 @@ var utag_data = {
  "user_profile_profileInfo_loginStatus":loginStatusContent,
  "user_profile_profileInfo_language":""
 };
-utag.view(utag_data); 
+
+window.cio ? window.cio : window.cio = {};
+window.cio.o = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if (typeof utag !== 'undefined' && typeof utag.view === 'function') {
+      utag.view(utag_data);
+      cio.o.disconnect();
+    }
+  });
+});
+
+window.cio.o.observe(document.body, { childList: true, subtree: true });
 });
   
 </script>
