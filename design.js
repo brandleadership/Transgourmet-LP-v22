@@ -120,7 +120,7 @@ module.exports = cx.design
         require("./content-elements/script-elements/page-category-02"),
         require("./content-elements/script-elements/page-category-03"),
         require("./content-elements/script-elements/page-category-04"),
-        require("./content-elements/script-elements/registration"),
+        require("./content-elements/script-elements/eventID"),
         require("./content-elements/script-elements/user-profile-profileInfo-loginStatus"),
         require("./content-elements/script-elements/user-profile-profileInfo-profileID")
       )
